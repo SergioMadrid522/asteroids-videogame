@@ -1,0 +1,1215 @@
+{
+  "frames": {
+    "efecto_fuego_00016.png": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 428,
+        "h": 116
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 15,
+        "w": 428,
+        "h": 116
+      },
+      "sourceSize": {
+        "w": 432,
+        "h": 144
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "efecto_fuego_00015.png": {
+      "frame": {
+        "x": 428,
+        "y": 0,
+        "w": 427,
+        "h": 115
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 14,
+        "w": 427,
+        "h": 115
+      },
+      "sourceSize": {
+        "w": 432,
+        "h": 144
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "efecto_fuego_00032.png": {
+      "frame": {
+        "x": 855,
+        "y": 0,
+        "w": 427,
+        "h": 114
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 14,
+        "w": 427,
+        "h": 114
+      },
+      "sourceSize": {
+        "w": 432,
+        "h": 144
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "efecto_fuego_00008.png": {
+      "frame": {
+        "x": 1282,
+        "y": 0,
+        "w": 426,
+        "h": 119
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 9,
+        "w": 426,
+        "h": 119
+      },
+      "sourceSize": {
+        "w": 432,
+        "h": 144
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "efecto_fuego_00030.png": {
+      "frame": {
+        "x": 855,
+        "y": 114,
+        "w": 426,
+        "h": 117
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 12,
+        "w": 426,
+        "h": 117
+      },
+      "sourceSize": {
+        "w": 432,
+        "h": 144
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "efecto_fuego_00033.png": {
+      "frame": {
+        "x": 428,
+        "y": 115,
+        "w": 426,
+        "h": 117
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 11,
+        "w": 426,
+        "h": 117
+      },
+      "sourceSize": {
+        "w": 432,
+        "h": 144
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "efecto_fuego_00012.png": {
+      "frame": {
+        "x": 0,
+        "y": 116,
+        "w": 426,
+        "h": 115
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 16,
+        "w": 426,
+        "h": 115
+      },
+      "sourceSize": {
+        "w": 432,
+        "h": 144
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "efecto_fuego_00029.png": {
+      "frame": {
+        "x": 0,
+        "y": 231,
+        "w": 426,
+        "h": 115
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 15,
+        "w": 426,
+        "h": 115
+      },
+      "sourceSize": {
+        "w": 432,
+        "h": 144
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "efecto_fuego_00036.png": {
+      "frame": {
+        "x": 1708,
+        "y": 0,
+        "w": 323,
+        "h": 108
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 97,
+        "y": 20,
+        "w": 323,
+        "h": 108
+      },
+      "sourceSize": {
+        "w": 432,
+        "h": 144
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "efecto_fuego_00037.png": {
+      "frame": {
+        "x": 1708,
+        "y": 108,
+        "w": 298,
+        "h": 106
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 121,
+        "y": 17,
+        "w": 298,
+        "h": 106
+      },
+      "sourceSize": {
+        "w": 432,
+        "h": 144
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "efecto_fuego_00017.png": {
+      "frame": {
+        "x": 1281,
+        "y": 119,
+        "w": 426,
+        "h": 110
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 16,
+        "w": 426,
+        "h": 110
+      },
+      "sourceSize": {
+        "w": 432,
+        "h": 144
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "efecto_fuego_00027.png": {
+      "frame": {
+        "x": 1281,
+        "y": 229,
+        "w": 425,
+        "h": 116
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 10,
+        "w": 425,
+        "h": 116
+      },
+      "sourceSize": {
+        "w": 432,
+        "h": 144
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "efecto_fuego_00022.png": {
+      "frame": {
+        "x": 854,
+        "y": 231,
+        "w": 425,
+        "h": 115
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 15,
+        "w": 425,
+        "h": 115
+      },
+      "sourceSize": {
+        "w": 432,
+        "h": 144
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "efecto_fuego_00021.png": {
+      "frame": {
+        "x": 854,
+        "y": 346,
+        "w": 425,
+        "h": 113
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 16,
+        "w": 425,
+        "h": 113
+      },
+      "sourceSize": {
+        "w": 432,
+        "h": 144
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "efecto_fuego_00031.png": {
+      "frame": {
+        "x": 426,
+        "y": 232,
+        "w": 425,
+        "h": 113
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 14,
+        "w": 425,
+        "h": 113
+      },
+      "sourceSize": {
+        "w": 432,
+        "h": 144
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "efecto_fuego_00020.png": {
+      "frame": {
+        "x": 426,
+        "y": 345,
+        "w": 425,
+        "h": 111
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 17,
+        "w": 425,
+        "h": 111
+      },
+      "sourceSize": {
+        "w": 432,
+        "h": 144
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "efecto_fuego_00028.png": {
+      "frame": {
+        "x": 0,
+        "y": 346,
+        "w": 424,
+        "h": 122
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 9,
+        "w": 424,
+        "h": 122
+      },
+      "sourceSize": {
+        "w": 432,
+        "h": 144
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "efecto_fuego_00010.png": {
+      "frame": {
+        "x": 424,
+        "y": 456,
+        "w": 424,
+        "h": 118
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 9,
+        "w": 424,
+        "h": 118
+      },
+      "sourceSize": {
+        "w": 432,
+        "h": 144
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "efecto_fuego_00025.png": {
+      "frame": {
+        "x": 0,
+        "y": 468,
+        "w": 424,
+        "h": 115
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 14,
+        "w": 424,
+        "h": 115
+      },
+      "sourceSize": {
+        "w": 432,
+        "h": 144
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "efecto_fuego_00005.png": {
+      "frame": {
+        "x": 1707,
+        "y": 214,
+        "w": 290,
+        "h": 118
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 136,
+        "y": 14,
+        "w": 290,
+        "h": 118
+      },
+      "sourceSize": {
+        "w": 432,
+        "h": 144
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "efecto_fuego_00002.png": {
+      "frame": {
+        "x": 1707,
+        "y": 332,
+        "w": 277,
+        "h": 108
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 148,
+        "y": 19,
+        "w": 277,
+        "h": 108
+      },
+      "sourceSize": {
+        "w": 432,
+        "h": 144
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "efecto_fuego_00009.png": {
+      "frame": {
+        "x": 1279,
+        "y": 345,
+        "w": 424,
+        "h": 112
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 17,
+        "w": 424,
+        "h": 112
+      },
+      "sourceSize": {
+        "w": 432,
+        "h": 144
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "efecto_fuego_00019.png": {
+      "frame": {
+        "x": 1279,
+        "y": 457,
+        "w": 424,
+        "h": 112
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 15,
+        "w": 424,
+        "h": 112
+      },
+      "sourceSize": {
+        "w": 432,
+        "h": 144
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "efecto_fuego_00018.png": {
+      "frame": {
+        "x": 1279,
+        "y": 569,
+        "w": 424,
+        "h": 111
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 18,
+        "w": 424,
+        "h": 111
+      },
+      "sourceSize": {
+        "w": 432,
+        "h": 144
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "efecto_fuego_00023.png": {
+      "frame": {
+        "x": 1279,
+        "y": 680,
+        "w": 424,
+        "h": 107
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 18,
+        "w": 424,
+        "h": 107
+      },
+      "sourceSize": {
+        "w": 432,
+        "h": 144
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "efecto_fuego_00014.png": {
+      "frame": {
+        "x": 848,
+        "y": 459,
+        "w": 423,
+        "h": 119
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 13,
+        "w": 423,
+        "h": 119
+      },
+      "sourceSize": {
+        "w": 432,
+        "h": 144
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "efecto_fuego_00026.png": {
+      "frame": {
+        "x": 424,
+        "y": 574,
+        "w": 423,
+        "h": 119
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 12,
+        "w": 423,
+        "h": 119
+      },
+      "sourceSize": {
+        "w": 432,
+        "h": 144
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "efecto_fuego_00011.png": {
+      "frame": {
+        "x": 0,
+        "y": 583,
+        "w": 423,
+        "h": 112
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 15,
+        "w": 423,
+        "h": 112
+      },
+      "sourceSize": {
+        "w": 432,
+        "h": 144
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "efecto_fuego_00024.png": {
+      "frame": {
+        "x": 847,
+        "y": 578,
+        "w": 422,
+        "h": 123
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 9,
+        "w": 422,
+        "h": 123
+      },
+      "sourceSize": {
+        "w": 432,
+        "h": 144
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "efecto_fuego_00013.png": {
+      "frame": {
+        "x": 423,
+        "y": 693,
+        "w": 422,
+        "h": 110
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 19,
+        "w": 422,
+        "h": 110
+      },
+      "sourceSize": {
+        "w": 432,
+        "h": 144
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "efecto_fuego_00007.png": {
+      "frame": {
+        "x": 0,
+        "y": 695,
+        "w": 416,
+        "h": 112
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 8,
+        "y": 15,
+        "w": 416,
+        "h": 112
+      },
+      "sourceSize": {
+        "w": 432,
+        "h": 144
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "efecto_fuego_00034.png": {
+      "frame": {
+        "x": 845,
+        "y": 701,
+        "w": 380,
+        "h": 115
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 41,
+        "y": 12,
+        "w": 380,
+        "h": 115
+      },
+      "sourceSize": {
+        "w": 432,
+        "h": 144
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "efecto_fuego_00038.png": {
+      "frame": {
+        "x": 1703,
+        "y": 440,
+        "w": 276,
+        "h": 106
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 143,
+        "y": 20,
+        "w": 276,
+        "h": 106
+      },
+      "sourceSize": {
+        "w": 432,
+        "h": 144
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "efecto_fuego_00006.png": {
+      "frame": {
+        "x": 416,
+        "y": 803,
+        "w": 358,
+        "h": 109
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 66,
+        "y": 18,
+        "w": 358,
+        "h": 109
+      },
+      "sourceSize": {
+        "w": 432,
+        "h": 144
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "efecto_fuego_00035.png": {
+      "frame": {
+        "x": 0,
+        "y": 807,
+        "w": 352,
+        "h": 106
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 69,
+        "y": 19,
+        "w": 352,
+        "h": 106
+      },
+      "sourceSize": {
+        "w": 432,
+        "h": 144
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "efecto_fuego_00003.png": {
+      "frame": {
+        "x": 1703,
+        "y": 546,
+        "w": 274,
+        "h": 109
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 149,
+        "y": 16,
+        "w": 274,
+        "h": 109
+      },
+      "sourceSize": {
+        "w": 432,
+        "h": 144
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "efecto_fuego_00004.png": {
+      "frame": {
+        "x": 1703,
+        "y": 655,
+        "w": 269,
+        "h": 108
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 157,
+        "y": 20,
+        "w": 269,
+        "h": 108
+      },
+      "sourceSize": {
+        "w": 432,
+        "h": 144
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "efecto_fuego_00000.png": {
+      "frame": {
+        "x": 1972,
+        "y": 655,
+        "w": 72,
+        "h": 76
+      },
+      "rotated": true,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 350,
+        "y": 39,
+        "w": 72,
+        "h": 76
+      },
+      "sourceSize": {
+        "w": 432,
+        "h": 144
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "efecto_fuego_00045.png": {
+      "frame": {
+        "x": 1703,
+        "y": 763,
+        "w": 268,
+        "h": 99
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 149,
+        "y": 23,
+        "w": 268,
+        "h": 99
+      },
+      "sourceSize": {
+        "w": 432,
+        "h": 144
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "efecto_fuego_00048.png": {
+      "frame": {
+        "x": 1703,
+        "y": 862,
+        "w": 265,
+        "h": 87
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 153,
+        "y": 30,
+        "w": 265,
+        "h": 87
+      },
+      "sourceSize": {
+        "w": 432,
+        "h": 144
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "efecto_fuego_00041.png": {
+      "frame": {
+        "x": 1225,
+        "y": 787,
+        "w": 264,
+        "h": 106
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 154,
+        "y": 17,
+        "w": 264,
+        "h": 106
+      },
+      "sourceSize": {
+        "w": 432,
+        "h": 144
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "efecto_fuego_00001.png": {
+      "frame": {
+        "x": 1489,
+        "y": 787,
+        "w": 158,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 262,
+        "y": 23,
+        "w": 158,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 432,
+        "h": 144
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "efecto_fuego_00039.png": {
+      "frame": {
+        "x": 1489,
+        "y": 885,
+        "w": 262,
+        "h": 107
+      },
+      "rotated": true,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 158,
+        "y": 20,
+        "w": 262,
+        "h": 107
+      },
+      "sourceSize": {
+        "w": 432,
+        "h": 144
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "efecto_fuego_00043.png": {
+      "frame": {
+        "x": 1596,
+        "y": 885,
+        "w": 264,
+        "h": 105
+      },
+      "rotated": true,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 154,
+        "y": 23,
+        "w": 264,
+        "h": 105
+      },
+      "sourceSize": {
+        "w": 432,
+        "h": 144
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "efecto_fuego_00042.png": {
+      "frame": {
+        "x": 1701,
+        "y": 949,
+        "w": 263,
+        "h": 97
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 155,
+        "y": 23,
+        "w": 263,
+        "h": 97
+      },
+      "sourceSize": {
+        "w": 432,
+        "h": 144
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "efecto_fuego_00040.png": {
+      "frame": {
+        "x": 1701,
+        "y": 1046,
+        "w": 261,
+        "h": 99
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 157,
+        "y": 21,
+        "w": 261,
+        "h": 99
+      },
+      "sourceSize": {
+        "w": 432,
+        "h": 144
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "efecto_fuego_00047.png": {
+      "frame": {
+        "x": 1701,
+        "y": 1145,
+        "w": 260,
+        "h": 99
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 158,
+        "y": 28,
+        "w": 260,
+        "h": 99
+      },
+      "sourceSize": {
+        "w": 432,
+        "h": 144
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "efecto_fuego_00049.png": {
+      "frame": {
+        "x": 774,
+        "y": 816,
+        "w": 258,
+        "h": 94
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 160,
+        "y": 23,
+        "w": 258,
+        "h": 94
+      },
+      "sourceSize": {
+        "w": 432,
+        "h": 144
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "efecto_fuego_00046.png": {
+      "frame": {
+        "x": 1032,
+        "y": 816,
+        "w": 249,
+        "h": 102
+      },
+      "rotated": true,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 169,
+        "y": 20,
+        "w": 249,
+        "h": 102
+      },
+      "sourceSize": {
+        "w": 432,
+        "h": 144
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "efecto_fuego_00044.png": {
+      "frame": {
+        "x": 774,
+        "y": 910,
+        "w": 255,
+        "h": 100
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 164,
+        "y": 20,
+        "w": 255,
+        "h": 100
+      },
+      "sourceSize": {
+        "w": 432,
+        "h": 144
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  "meta": {
+    "app": "http://free-tex-packer.com",
+    "version": "0.6.7",
+    "image": "fire.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 2048,
+      "h": 1244
+    },
+    "scale": 1
+  }
+}
