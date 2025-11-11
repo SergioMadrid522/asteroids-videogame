@@ -49,3 +49,5 @@ The project fulfills the following task requirements:
 # Notes
 
 1. **SimpleRope** was replaced by Graphics for simplicity and to avoid errors; the trail still fulfills the rope effect requirement.
+2. The game is not optimized for mobile devices.
+3. For a better experience, use Firefox.
