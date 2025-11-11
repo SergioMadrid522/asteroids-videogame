@@ -8,12 +8,9 @@ import {
   AnimatedSprite,
   Graphics,
   Point,
+  Text,
 } from "pixi.js";
-// Elimina la importación de SimpleRope, ya no la usamos
-// import { SimpleRope } from "@pixi/mesh-extras";
 
-/* controllers */
-import { Controller } from "./Controller.ts";
 /* types */
 type Asteroid = AnimatedSprite & {
   speedX: number;
@@ -28,10 +25,8 @@ type Bullet = Graphics & {
   const app = new Application();
   await app.init({
     resizeTo: window,
-    // Quita preference: "webgl2" si no es necesario, ya que Graphics funciona con WebGL1
   });
   document.body.appendChild(app.canvas);
-  const controller = new Controller(); /* BACKGROUND CREATION */
   const backgroundTexture = await Assets.load("/assets/background.webp");
   const background = new Sprite(backgroundTexture);
   background.width = app.screen.width;
@@ -51,33 +46,36 @@ type Bullet = Graphics & {
 
   const fireSheet = await Assets.load("/assets/fire.json");
 
-  const fireFrames: Texture[] = [];
-  for (const frameName in fireSheet.textures) {
-    fireFrames.push(fireSheet.textures[frameName]);
-  }
-
-  const fire = new AnimatedSprite(fireFrames); // Lo anclamos desde el centro abajo, como una llama real
-
-  fire.anchor.set(0.5, 0.2); // Posicionamos detrás de la nave dentro del mismo contenedor
-  fire.y = spaceShip.height * 0.5 + 10; // un poco más abajo
-  fire.scale.set(1.2);
-  fire.rotation = Math.PI;
-  fire.animationSpeed = 0.4;
-  fire.visible = false;
-
-  container.addChild(fire); /* CENTER SPACESHIP */ // Mueve el contenedor (que contiene la nave y el fuego) al centro
-
   container.x = app.screen.width / 2;
   container.y = app.screen.height / 2; // --- REQUISITO: IMPLEMENTACIÓN DE ROPE ---
-  // Cambia a Graphics para la estela (más simple y sin errores)
+  // change to Graphics for the trail (simpler and without errors)
 
-  const historyLength = 20; // Longitud de la estela
+  const historyLength = 20; // tail length
   const ropePoints: Point[] = [];
   for (let i = 0; i < historyLength; i++) {
     ropePoints.push(new Point(container.x, container.y));
   }
-  const trail = new Graphics(); // Usa Graphics en lugar de SimpleRope
-  app.stage.addChildAt(trail, 1); // --- REQUISITOS: EVENTOS DE MOUSE (Cumplen la tarea) ---
+  const trail = new Graphics(); // Use Graphics instead of SimpleRope
+  app.stage.addChildAt(trail, 1); // --- CONTADOR DE ASTEROIDES DESTRUIDOS ---
+  let score = 0; // Variable para el puntaje
+  const scoreText = new Text({
+    text: `Asteroides destruidos: ${score}`,
+    style: {
+      fontFamily: "Arial",
+      fontSize: 24,
+      fill: 0xffffff,
+      align: "left",
+    },
+  });
+  scoreText.x = 10;
+  scoreText.y = 10;
+  app.stage.addChild(scoreText);
+
+  let shakeDuration = 0;
+  const shakeIntensity = 2.5;
+  let shakingAsteroid: Asteroid | null = null;
+
+  // --- REQUISITOS: EVENTOS DE MOUSE (Cumplen la tarea) ---
   // 1. Hacer el stage interactivo para que escuche eventos de mouse
 
   app.stage.interactive = true; // 2. Traslación y Rotación (con 'pointermove')
@@ -88,31 +86,32 @@ type Bullet = Graphics & {
     const pointerPos = event.global;
     targetX = pointerPos.x;
     targetY = pointerPos.y;
-    // Calcula la rotación hacia el objetivo
+    // Calculate the rotation towards the target
     const dx = targetX - container.x;
     const dy = targetY - container.y;
     container.rotation = Math.atan2(dy, dx) + Math.PI / 2;
   });
 
   window.addEventListener("wheel", (event) => {
-    event.preventDefault(); // Evita que la página haga scroll
+    event.preventDefault(); // Prevents the page from scrolling
     const scaleAmount = 0.05;
 
     if (event.deltaY < 0) {
-      // Rueda hacia arriba
+      // Roll up
       container.scale.x += scaleAmount;
       container.scale.y += scaleAmount;
     } else {
-      // Rueda hacia abajo
+      // Roll down
       container.scale.x -= scaleAmount;
       container.scale.y -= scaleAmount;
-    } // Limitar la escala
+    }
+    // Limit the scale
     container.scale.x = Math.max(0.5, container.scale.x);
     container.scale.y = Math.max(0.5, container.scale.y);
-  }); // 4. Transparencia (con 'contextmenu' - clic derecho)
+  });
 
   app.canvas.addEventListener("contextmenu", (event) => {
-    event.preventDefault(); // Evita que salga el menú contextual
+    event.preventDefault();
     if (container.alpha === 1.0) {
       container.alpha = 0.5;
     } else {
@@ -129,7 +128,7 @@ type Bullet = Graphics & {
   }
 
   const asteroids: Asteroid[] = [];
-  const numAsteroids = 10;
+  const numAsteroids = 50;
   for (let i = 0; i < numAsteroids; i++) {
     const asteroid = new AnimatedSprite(frames) as Asteroid;
 
@@ -152,8 +151,6 @@ type Bullet = Graphics & {
     app.stage.addChild(asteroid);
     asteroids.push(asteroid);
   }
-  const speed = 3; // --- LO VAMOS A USAR PARA EL TURBO
-  // const rotation = 2; // --- YA NO SE USA (borrado)
   const bullets: Bullet[] = [];
   const bulletSpeed = 8;
   let lastShotTime = 0;
@@ -175,18 +172,20 @@ type Bullet = Graphics & {
   console.log(Object.keys(fireSheet.textures));
 
   app.ticker.add(() => {
-    // Movimiento suave hacia el mouse
-    const dx = targetX - container.x;
-    const dy = targetY - container.y;
-    const distance = Math.sqrt(dx * dx + dy * dy);
-    if (distance > 1) {
-      container.x += (dx / distance) * moveSpeed;
-      container.y += (dy / distance) * moveSpeed;
+    // move the ship towards the target position (mouse event)
+    if (shakeDuration <= 0) {
+      const dx = targetX - container.x;
+      const dy = targetY - container.y;
+      const distance = Math.sqrt(dx * dx + dy * dy);
+      if (distance > 1) {
+        container.x += (dx / distance) * moveSpeed;
+        container.y += (dy / distance) * moveSpeed;
+      }
     }
 
-    // Lógica de disparo
+    // shootting logic (with spacebar)
     const now = Date.now();
-    if (controller.leftClick && now - lastShotTime > shotCooldown) {
+    if (spacePressed && now - lastShotTime > shotCooldown) {
       lastShotTime = now;
       const bullet = new Graphics() as Bullet;
       bullet.circle(0, 0, 4).fill(0xffffff);
@@ -218,19 +217,31 @@ type Bullet = Graphics & {
     ropePoints[0].x = container.x;
     ropePoints[0].y = container.y;
 
-    // Dibuja la estela con Graphics (líneas conectando puntos)
+    // draw the trail using Graphics
     trail.clear();
     trail.moveTo(ropePoints[0].x, ropePoints[0].y);
     for (let i = 1; i < ropePoints.length; i++) {
       trail.lineTo(ropePoints[i].x, ropePoints[i].y);
     }
-    trail.stroke({ width: 5, color: 0xff0000 }); // Ajusta color/ancho como quieras (rojo para la estela)
+    trail.stroke({ width: 5, color: 0xff0000 });
 
-    // Lógica de asteroides y colisiones
+    // Crash detection
+    if (shakeDuration > 0) {
+      shakeDuration--;
+      //Moves the container(ship) randomly
+      container.x += (Math.random() - 0.5) * shakeIntensity;
+      container.y += (Math.random() - 0.5) * shakeIntensity;
+      if (shakingAsteroid) {
+        shakingAsteroid.x += (Math.random() - 0.5) * shakeIntensity;
+        shakingAsteroid.y += (Math.random() - 0.5) * shakeIntensity;
+      }
+    }
+
+    // asteroids Logic + Collision Detection
     for (let a = asteroids.length - 1; a >= 0; a--) {
       const asteroid = asteroids[a];
       asteroid.x += asteroid.speedX;
-      asteroid.y += asteroid.speedY; // Screen wrap
+      asteroid.y += asteroid.speedY;
 
       if (asteroid.x > app.screen.width + asteroid.width / 2)
         asteroid.x = -asteroid.width / 2;
@@ -239,8 +250,22 @@ type Bullet = Graphics & {
       if (asteroid.y > app.screen.height + asteroid.height / 2)
         asteroid.y = -asteroid.height / 2;
       else if (asteroid.y < -asteroid.height / 2)
-        asteroid.y = app.screen.height + asteroid.height / 2; // Collision detection with bullets
+        asteroid.y = app.screen.height + asteroid.height / 2;
 
+      // Collision detection with spaceship
+      const shipDx = container.x - asteroid.x;
+      const shipDy = container.y - asteroid.y;
+      const shipDistance = Math.sqrt(shipDx * shipDx + shipDy * shipDy);
+      if (
+        shipDistance < (spaceShip.width + asteroid.width) / 2 &&
+        shakeDuration <= 0
+      ) {
+        // Shake asteroid
+        shakeDuration = 10;
+        shakingAsteroid = asteroid;
+      }
+
+      // Collision detection with bullets
       for (let b = bullets.length - 1; b >= 0; b--) {
         const bullet = bullets[b];
         const dx = asteroid.x - bullet.x;
@@ -271,6 +296,10 @@ type Bullet = Graphics & {
 
           app.stage.removeChild(bullet);
           bullets.splice(b, 1);
+
+          // Increments the score and updates the text
+          score++;
+          scoreText.text = `Asteroides destruidos: ${score}`;
 
           break;
         }
