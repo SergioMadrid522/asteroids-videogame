@@ -1,6 +1,6 @@
 {
   "name": "asteroids",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -10,6 +10,8 @@
     "dev": "vite"
   },
   "dependencies": {
+    "@pixi/mesh": "^7.4.3",
+    "@pixi/mesh-extras": "^7.4.3",
     "pixi.js": "^8.8.1"
   },
   "devDependencies": {
