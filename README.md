@@ -10,7 +10,6 @@ It demonstrates various graphical transformations, animations, and interactive f
    ```bash
    npm install
    ```
-   Open is required
 3. Open a terminal and run the following command:
    ```bash
    npm run dev
@@ -23,14 +22,14 @@ The project fulfills the following task requirements:
 
 | Requirements                                  | where?                                                                                                 |
 | --------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
-| [x] Rotations                                 | Container.rotation = Math.atan2(dy, dx) + Math.PI / 2                                                  |
-| [x] Translations                              | Implemented in the app.ticker loop, updating container.x and container.y.                              |
-| [x] Scaling                                   | window.addEventListener("wheel")                                                                       |
-| [x] Transparency                              | app.canvas.addEventListener("contextmenu").                                                            |
-| [x] Containers                                | const container = new Container();                                                                     |
-| [x] Sprites & AnimatedSprites                 | The spaceship is a Sprite, the fire animation is an AnimatedSprite, and asteroids are AnimatedSprites. |
-| [x] Rope / Trail Effect                       | See ropePoints and trail logic in app.ticker.                                                          |
-| [x] Mouse Events                              | pointermove for rotation and movement, wheel for scaling, contextmenu for transparency.                |
+| Rotations                                     | Container.rotation = Math.atan2(dy, dx) + Math.PI / 2                                                  |
+| Translations                                  | Implemented in the app.ticker loop, updating container.x and container.y.                              |
+| Scaling                                       | window.addEventListener("wheel")                                                                       |
+| Transparency                                  | app.canvas.addEventListener("contextmenu").                                                            |
+| Containers                                    | const container = new Container();                                                                     |
+| Sprites & AnimatedSprites                     | The spaceship is a Sprite, the fire animation is an AnimatedSprite, and asteroids are AnimatedSprites. |
+| Rope / Trail Effect                           | See ropePoints and trail logic in app.ticker.                                                          |
+| Mouse Events                                  | pointermove for rotation and movement, wheel for scaling, contextmenu for transparency.                |
 | Extra Features (not required but implemented) | Shooting bullets with Spacebar                                                                         |
 
 # How the code is organized
