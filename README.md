@@ -38,6 +38,14 @@ The project fulfills the following task requirements:
 2. Controller.ts → Controller logic (if any specific input handling).
 3. assets/ → All images and JSON sprite sheets used in the project.
 
+# How to play the game
+
+1. Move the mouse where you want to move the ship.
+2. Use the mouse wheel to zoom in and out.
+3. Use the spacebar to shoot bullets.
+4. Collect asteroids to score points.  
+   Asteroids will shake when they collide with the ship or bullets.
+
 # Notes
 
 1. **SimpleRope** was replaced by Graphics for simplicity and to avoid errors; the trail still fulfills the rope effect requirement.
